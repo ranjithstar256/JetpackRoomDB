@@ -8,8 +8,13 @@ import androidx.room.PrimaryKey
 data class TodoItem(
     @PrimaryKey(autoGenerate = true)
     var itemId: Long = 0L,
+
     @ColumnInfo(name = "item_name")
     val itemName: String,
+
+    @ColumnInfo(name = "item_desk")
+    val itemdesk: String,
+
     @ColumnInfo(name = "is_completed")
     var isDone: Boolean = false
 )

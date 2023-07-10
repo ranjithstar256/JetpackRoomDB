@@ -17,7 +17,7 @@ abstract class TodoDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         TodoDatabase::class.java,
-                        "todo_list_database"
+                        "abc.db"
                     ).fallbackToDestructiveMigration()
                         .build()
                     INSTANCE = instance
